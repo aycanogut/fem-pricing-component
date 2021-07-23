@@ -1,3 +1,70 @@
 /// section
 
 @use '../abstracts/' as *;
+
+// main component
+.component {
+  //* component header section
+  &__header {
+    &__title {
+    }
+
+    &__text {
+    }
+  }
+
+  //* component body section
+  &__body {
+  }
+
+  //* slider section
+  &__slider {
+    // slider
+    &__input {
+    }
+
+    // output price section
+    &__output {
+    }
+
+    // '/ month' section
+    &__month {
+    }
+  }
+
+  //* component toggle section
+  &__toggle {
+    // text parts ( monthly and yearly billing
+    &__monthly {
+    }
+
+    &__yearly {
+    }
+
+    // toggle switch parts
+    &__input {
+    }
+
+    &__switch {
+    }
+
+    // discount badge
+    &__discount {
+    }
+  }
+
+  //* component footer section
+  &__footer {
+    // text and marker section
+    &__text {
+      &__item {
+      }
+    }
+
+    // trial button
+    &__button {
+      &__item {
+      }
+    }
+  }
+}
