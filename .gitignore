@@ -15,4 +15,5 @@
 .DS_Store
 .prettierignore
 .gitignore
-*/node_modules/*
+node_modules/
+node_modules/.vite
