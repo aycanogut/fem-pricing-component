@@ -1,2 +1,7 @@
 /// typo
 
+@use '../abstracts/' as *;
+
+body {
+  font-family: $font-family;
+}
