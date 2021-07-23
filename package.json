@@ -6,9 +6,10 @@
   "author": "Aycan Öğüt <aycanonfire@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "vite && sass --watch styles/index.scss:styles/style.css --style compressed --no-source-map",
+    "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "sass": "sass --watch styles/index.scss:styles/style.css --style compressed --no-source-map"
   },
   "devDependencies": {
     "sass": "^1.35.2",
