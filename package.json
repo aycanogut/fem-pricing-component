@@ -1,0 +1,13 @@
+{
+  "name": "fem-interactive-pricing-component",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.35.2",
+    "vite": "^2.4.3"
+  }
+}
