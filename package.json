@@ -2,12 +2,13 @@
   "name": "fem-interactive-pricing-component",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite && sass --watch styles/index.scss:styles/style.css --style compressed --no-source-map",
     "build": "vite build",
     "serve": "vite preview"
   },
   "devDependencies": {
     "sass": "^1.35.2",
     "vite": "^2.4.3"
-  }
+  },
+  "dependencies": {}
 }
