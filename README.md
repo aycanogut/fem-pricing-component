@@ -1,0 +1,1 @@
+fem-interactive-pricing-component
