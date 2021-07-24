@@ -5,3 +5,12 @@
 body {
   font-family: $font-family;
 }
+
+.component {
+  &__header {
+    &__text {
+      font-size: 1.3em;
+      line-height: 26px;
+    }
+  }
+}
