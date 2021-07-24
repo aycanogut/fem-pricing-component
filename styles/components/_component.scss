@@ -4,13 +4,20 @@
 
 // main component
 .component {
+  padding: 4.8em 24px 88px 24px; //todo update it
   text-align: center;
+
   //* component header section
   &__header {
+    background: no-repeat url("../../images/pattern-circles.svg") center center;
+    padding: 4.2em 0 3.6em 0;
+
     &__title {
     }
 
     &__text {
+      padding: 0.7em 6em 0 6em;
+      color: $color-grayish-blue;
     }
   }
 
