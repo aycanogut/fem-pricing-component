@@ -23,8 +23,10 @@ document.querySelector('.container').innerHTML = `
       </label>
       <label class="component__topper__toggle">
         <label class="component__topper__toggle__monthly">Monthly Billing</label>
-        <input type="checkbox" class="component__topper__toggle__input">
-        <span class="component__topper__toggle__switch"></span>
+          <label class="component__topper__toggle__button">
+            <input type="checkbox" class="component__topper__toggle__button__input">
+            <span class="component__topper__toggle__button__switch"></span>
+          </label>
         <label class="component__topper__toggle__yearly">Yearly Billing</label>
         <!-- <span class="component__topper__toggle__discount">${price}</span> -->
       </label>
