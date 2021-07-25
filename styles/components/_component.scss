@@ -24,14 +24,16 @@
   //* component body section
   &__body {
     margin: 2.4em 0 0 0;
-    padding: 3.6em 0 0 0;
     background: rgb(214, 214, 214);
   }
 
   //* component topper section
   &__topper {
-    // pageviews
+    padding: 3.6em 0 3.8em 0;
 
+    border-bottom: 1px solid $color-light-grayish-blue;
+
+    // pageviews
     &__pageviews {
       color: $color-grayish-blue;
     }
@@ -52,6 +54,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 3.25rem 0 3.8rem 0;
         color: $color-dark-desaturated-blue;
       }
 
@@ -63,11 +66,12 @@
 
     //* component toggle section
     &__toggle {
-      // text parts ( monthly and yearly billing
-      &__monthly {
-      }
-
+      display: flex;
+      justify-content: space-evenly;
+      // text parts ( monthly and yearly billing )
+      &__monthly,
       &__yearly {
+        color: $color-grayish-blue;
       }
 
       // toggle switch parts
@@ -85,6 +89,8 @@
 
   //* component footer section
   &__footer {
+    padding: 2.8em 0 3.2em 0;
+
     // text and marker section
     &__text {
       &__item {
