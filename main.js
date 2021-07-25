@@ -26,7 +26,7 @@ document.querySelector('.container').innerHTML = `
       <input type="checkbox" class="component__topper__toggle__input">
       <span class="component__topper__toggle__switch"></span>
       <label class="component__topper__toggle__yearly">Yearly Billing</label>
-      <span class="component__topper__toggle__discount">${price}</span>
+      <!-- <span class="component__topper__toggle__discount">${price}</span> -->
     </label>
   </section>
   <section class="component__footer">
