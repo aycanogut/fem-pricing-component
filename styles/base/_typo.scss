@@ -32,5 +32,17 @@ body {
         font-size: 1.3rem;
       }
     }
+
+    &__toggle {
+      &__monthly,
+      &__yearly {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  // footer
+  &__footer {
+    font-size: 1.3em;
   }
 }
