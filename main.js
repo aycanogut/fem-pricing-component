@@ -16,11 +16,10 @@ document.querySelector('.container').innerHTML = `
 </header>
 <main class="component__body">
   <section class="component__topper">
-    <p>100k pageviews</p>
+    <h2 class="component__topper__pageviews">100k pageviews</h2>
     <label for="range" class="component__topper__slider">
       <input type="range" name="range" min="1" max="5" step="1" value="3" class="component__topper__slider__input">
-      <output for="range" class="component__topper__slider__output">$${16}.00</output>
-      <span class="component__topper__slider__month">/ month</span>
+      <output for="range" class="component__topper__slider__output">$${16}.00 <span class="component__topper__slider__month">/ month</span></output>
     </label>
     <label class="component__topper__toggle">
       <label class="component__topper__toggle__monthly">Monthly Billing</label>
