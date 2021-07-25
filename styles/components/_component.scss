@@ -5,10 +5,11 @@
 // main component
 .component {
   margin: 4.8em 2.4em 8.8em 2.4em; //todo update it
-  text-align: center;
 
   //* component header section
   &__header {
+    text-align: center;
+
     background: no-repeat url("../../images/pattern-circles.svg") center center;
     padding: 4.2em 0 3.6em 0;
 
@@ -30,8 +31,8 @@
 
   //* component topper section
   &__topper {
+    text-align: center;
     padding: 3.6em 0 3.8em 0;
-
     border-bottom: 1px solid $color-light-grayish-blue;
 
     // pageviews
@@ -90,17 +91,35 @@
 
   //* component footer section
   &__footer {
+    margin: 0 auto;
     padding: 2.8em 0 3.2em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    // text and marker section
-    &__text {
+    &__list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
       &__item {
+        padding: 0.6rem 0 0.6rem 1.1rem;
+        &::marker {
+          content: url("../../images/icon-check.svg");
+        }
+        &__text {
+        }
       }
     }
 
     // trial button
     &__button {
+      margin: 2.8rem 0 0 0;
+      padding: 1em 2em;
+      border-radius: 20px;
+      background-color: $color-dark-desaturated-blue;
       &__item {
+        color: #fff;
       }
     }
   }
