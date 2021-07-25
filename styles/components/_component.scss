@@ -30,6 +30,12 @@
 
   //* component topper section
   &__topper {
+    // pageviews
+
+    &__pageviews {
+      color: $color-grayish-blue;
+    }
+
     //* slider section
     &__slider {
       display: block;
@@ -43,10 +49,15 @@
 
       // output price section
       &__output {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color-dark-desaturated-blue;
       }
 
       // '/ month' section
       &__month {
+        color: $color-grayish-blue;
       }
     }
 
