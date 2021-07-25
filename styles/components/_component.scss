@@ -23,6 +23,10 @@
 
   //* component body section
   &__body {
+  }
+
+  //* component topper section
+  &__topper {
     //* slider section
     &__slider {
       // slider
@@ -58,19 +62,19 @@
       &__discount {
       }
     }
+  }
 
-    //* component footer section
-    &__footer {
-      // text and marker section
-      &__text {
-        &__item {
-        }
+  //* component footer section
+  &__footer {
+    // text and marker section
+    &__text {
+      &__item {
       }
+    }
 
-      // trial button
-      &__button {
-        &__item {
-        }
+    // trial button
+    &__button {
+      &__item {
       }
     }
   }
