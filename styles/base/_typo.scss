@@ -7,10 +7,30 @@ body {
 }
 
 .component {
+  // header
   &__header {
     &__text {
       font-size: 1.3em;
       line-height: 26px;
+    }
+  }
+
+  // topper
+  &__topper {
+    &__pageviews {
+      font-size: 1.5em;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    &__slider {
+      &__output {
+        font-size: 2em;
+      }
+
+      &__month {
+        font-size: 1.3rem;
+      }
     }
   }
 }
