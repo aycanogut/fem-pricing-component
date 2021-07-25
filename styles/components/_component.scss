@@ -4,7 +4,7 @@
 
 // main component
 .component {
-  padding: 4.8em 24px 88px 24px; //todo update it
+  margin: 4.8em 2.4em 8.8em 2.4em; //todo update it
   text-align: center;
 
   //* component header section
@@ -23,6 +23,8 @@
 
   //* component body section
   &__body {
+    margin: 2.4em 0 0 0;
+    background: rgb(214, 214, 214);
   }
 
   //* component topper section
