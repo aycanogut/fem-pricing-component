@@ -18,7 +18,7 @@ document.querySelector('.container').innerHTML = `
     <section class="component__body">
       <p>100k pageviews</p>
       <label for="range" class="component__body__slider">
-        <input type="range" name="range" min="0" max="100" step="1" value="16" class="component__body__slider__input">
+        <input type="range" name="range" min="1" max="5" step="1" value="3" class="component__body__slider__input">
         <output for="range" class="component__body__slider__output">$${16}.00</output>
         <span class="component__body__slider__month">/ month</span>
       </label>
@@ -30,16 +30,16 @@ document.querySelector('.container').innerHTML = `
         <span class="component__body__toggle__discount">${price}</span>
       </label>
     </section>
-    <section class="component__body__footer">
-      <div class="component__body__footer__text">
-        <p class="component__body__footer__text__item">Unlimited Websites</p>
-        <p class="component__body__footer__text__item">100% data ownership</p>
-        <p class="component__body__footer__text__item">Email reports</p>
-      </div>
-      <div class="component__body__footer__button">
-        <a href="#" class="component__body__footer__button__item">Start my trial</a>
-      </div>
-    </section>
     </main> 
-  </div>
-`
+    </div>
+    `
+// <section class="component__body__footer">
+//   <div class="component__body__footer__text">
+//     <p class="component__body__footer__text__item">Unlimited Websites</p>
+//     <p class="component__body__footer__text__item">100% data ownership</p>
+//     <p class="component__body__footer__text__item">Email reports</p>
+//   </div>
+//   <div class="component__body__footer__button">
+//     <a href="#" class="component__body__footer__button__item">Start my trial</a>
+//   </div>
+// </section>
