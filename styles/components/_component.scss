@@ -70,19 +70,72 @@
     &__toggle {
       display: flex;
       justify-content: space-evenly;
+
       // text parts ( monthly and yearly billing )
       &__monthly,
       &__yearly {
         color: $color-grayish-blue;
       }
 
-      // toggle switch parts
-      &__input {
-      }
+      // toggle switcher (I used a method from W3School ==> https://www.w3schools.com/howto/howto_css_switch.asp)
+      // the switch - the box around the slider
 
       &__switch {
-      }
+        position: relative;
+        display: inline-block;
+        width: 42px;
+        height: 22px;
+        @include transition(0.4s ease);
 
+        // hide default HTML checkbox
+        &__input {
+          opacity: 0;
+          width: 0;
+          height: 0;
+
+          &:checked + .component__topper__toggle__switch__slider,
+          &:hover + .component__topper__toggle__switch__slider {
+            background-color: $color-strong-cyan;
+          }
+
+          &:focus + .component__topper__toggle__switch__slider {
+            box-shadow: 0 0 1px $color-strong-cyan;
+          }
+
+          &:checked + .component__topper__toggle__switch__slider:before {
+            -webkit-transform: translateX(19.3px);
+            -ms-transform: translateX(19.3px);
+            transform: translateX(19.3px);
+          }
+        }
+
+        // rounded slider part
+        &__slider {
+          position: absolute;
+          cursor: pointer;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: $color-light-grayish-blue-toggle;
+          -webkit-transition: 0.4s;
+          @include transition(0.8 ease);
+          border-radius: 34px;
+
+          &:before {
+            position: absolute;
+            content: "";
+            height: 15px;
+            width: 15px;
+            left: 4px;
+            bottom: 0.35em;
+            background-color: $color-white;
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+            border-radius: 50%;
+          }
+        }
+      }
       // discount badge
       &__discount {
       }
