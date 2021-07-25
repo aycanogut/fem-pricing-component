@@ -22,12 +22,12 @@ document.querySelector('.container').innerHTML = `
         <output for="range" class="component__topper__slider__output">$${16}.00 <span class="component__topper__slider__month">/ month</span></output>
       </label>
       <label class="component__topper__toggle">
-        <label class="component__topper__toggle__monthly">Monthly Billing</label>
-          <label class="component__topper__toggle__button">
-            <input type="checkbox" class="component__topper__toggle__button__input">
-            <span class="component__topper__toggle__button__switch"></span>
+        <p class="component__topper__toggle__monthly">Monthly Billing</p>
+          <label class="component__topper__toggle__switch">
+            <input type="checkbox" class="component__topper__toggle__switch__input">
+            <span class="component__topper__toggle__switch__slider"></span>
           </label>
-        <label class="component__topper__toggle__yearly">Yearly Billing</label>
+        <p class="component__topper__toggle__yearly">Yearly Billing</p>
         <!-- <span class="component__topper__toggle__discount">${price}</span> -->
       </label>
     </section>
