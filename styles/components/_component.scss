@@ -24,7 +24,8 @@
   //* component body section
   &__body {
     margin: 2.4em 0 0 0;
-    background: rgb(214, 214, 214);
+    background-color: $color-white;
+    border: 1px solid black;
   }
 
   //* component topper section
