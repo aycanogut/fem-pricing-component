@@ -29,14 +29,16 @@ document.querySelector('.container').innerHTML = `
               <span class="component__topper__toggle__switch__slider"></span>
             </label>
           <p class="component__topper__toggle__yearly">Yearly Billing</p>
-          <!-- <span class="component__topper__toggle__discount">${price}</span> -->
+          <span class="component__topper__toggle__discount">
+            <span></span>
+          </span> 
         </label>
       <form>
     </section>
     <section class="component__footer">
       <ul class="component__footer__list">
         <li class="component__footer__list__item">
-          <p class="component__footer__list__item__text">Unlimited websites</p>
+          <p class="component__footer__list__item__text">Unlimited Websites</p>
         </li>  
         <li class="component__footer__list__item">
           <p class="component__footer__list__item__text">100% data ownership</p>
