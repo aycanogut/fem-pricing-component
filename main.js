@@ -17,19 +17,21 @@ document.querySelector('.container').innerHTML = `
   <main class="component__body">
     <section class="component__topper">
       <h2 class="component__topper__pageviews">100k pageviews</h2>
-      <label for="range" class="component__topper__slider">
-        <input type="range" name="range" min="1" max="5" step="1" value="3" class="component__topper__slider__input">
-        <output for="range" class="component__topper__slider__output">$${16}.00 <span class="component__topper__slider__month">/ month</span></output>
-      </label>
-      <label class="component__topper__toggle">
-        <p class="component__topper__toggle__monthly">Monthly Billing</p>
-          <label class="component__topper__toggle__switch">
-            <input type="checkbox" class="component__topper__toggle__switch__input">
-            <span class="component__topper__toggle__switch__slider"></span>
-          </label>
-        <p class="component__topper__toggle__yearly">Yearly Billing</p>
-        <!-- <span class="component__topper__toggle__discount">${price}</span> -->
-      </label>
+      <form>
+        <label for="slider" class="component__topper__slider">
+          <input type="range" name="slider" min="1" max="5" step="1" value="3" class="component__topper__slider__input">
+          <output for="slider" class="component__topper__slider__output">$${16}.00 <span class="component__topper__slider__month">/ month</span></output>
+        </label>
+        <label class="component__topper__toggle">
+          <p class="component__topper__toggle__monthly">Monthly Billing</p>
+            <label class="component__topper__toggle__switch">
+              <input type="checkbox" class="component__topper__toggle__switch__input">
+              <span class="component__topper__toggle__switch__slider"></span>
+            </label>
+          <p class="component__topper__toggle__yearly">Yearly Billing</p>
+          <!-- <span class="component__topper__toggle__discount">${price}</span> -->
+        </label>
+      <form>
     </section>
     <section class="component__footer">
       <ul class="component__footer__list">
