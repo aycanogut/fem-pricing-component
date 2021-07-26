@@ -44,6 +44,12 @@ body {
         font-size: 1.3rem;
         line-height: 20px;
       }
+
+      &__discount {
+        font-size: 10px;
+        line-height: 20px;
+        font-weight: map-get($font-weight, semi-bold);
+      }
     }
   }
 
