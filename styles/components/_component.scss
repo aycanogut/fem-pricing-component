@@ -58,10 +58,9 @@
         border-radius: 12px;
         transition: background 450ms ease-in;
 
-        //* override default slider input styles.
+        //* override default slider input styles
         /*
-        following code blocks is taking from https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/
-      
+        (I used a method from csstricks ==>  https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/)
         Note that while we’re repeating code here, that’s necessary as you can’t comma-separate these type of selectors. Browsers will drop the entire selector if it doesn’t understand a part of it.
         */
 
