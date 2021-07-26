@@ -36,7 +36,7 @@ document.querySelector('.container').innerHTML = `
     <section class="component__footer">
       <ul class="component__footer__list">
         <li class="component__footer__list__item">
-          <p class="component__footer__list__item__text">Unlimited Websites</p>
+          <p class="component__footer__list__item__text">Unlimited websites</p>
         </li>  
         <li class="component__footer__list__item">
           <p class="component__footer__list__item__text">100% data ownership</p>
