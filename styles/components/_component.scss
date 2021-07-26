@@ -12,9 +12,6 @@
     background: no-repeat url("../../images/pattern-circles.svg") center center;
     padding: 4.2em 0 3.6em 0;
 
-    &__title {
-    }
-
     &__text {
       padding: 0.7em 6em 0 6em;
       color: $color-grayish-blue;
@@ -192,6 +189,13 @@
         color: $color-grayish-blue;
       }
 
+      &__monthly {
+        padding-left: 2.2em;
+      }
+
+      &__yearly {
+        padding-right: 2.2em;
+      }
       // toggle switcher (I used a method from W3School ==> https://www.w3schools.com/howto/howto_css_switch.asp)
       // the switch - the box around the slider
 
