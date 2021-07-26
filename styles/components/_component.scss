@@ -46,9 +46,19 @@
 
       // slider
       &__input {
-        display: block;
+        background: linear-gradient(
+          to right,
+          $color-strong-cyan 0%,
+          $color-strong-cyan 50%,
+          $color-light-grayish-blue 50%,
+          $color-light-grayish-blue 100%
+        );
+        border-radius: 12px;
+        height: 8px;
         width: 27.9em;
-        margin: 0 auto;
+        outline: none;
+        transition: background 450ms ease-in;
+        -webkit-appearance: none;
       }
 
       // output price section
