@@ -9,7 +9,6 @@
   //* component header section
   &__header {
     text-align: center;
-
     background: no-repeat url("../../images/pattern-circles.svg") center center;
     padding: 4.2em 0 3.6em 0;
 
@@ -43,6 +42,7 @@
     //* slider section
     &__slider {
       display: block;
+      margin: 4em 0 0 0;
 
       // slider
       &__input {
@@ -164,7 +164,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 3.25rem 0 3.8rem 0;
+        margin: 4rem 0 3.6rem 0;
         color: $color-dark-desaturated-blue;
       }
 
@@ -253,7 +253,7 @@
   //* component footer section
   &__footer {
     margin: 0 auto;
-    padding: 2.8em 0 3.2em 0;
+    padding: 1.5em 0 2.4em 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -264,7 +264,7 @@
       align-items: center;
 
       &__item {
-        padding: 0.6rem 0 0.6rem 1.1rem;
+        padding: 0.7rem 0 0.6rem 1.1rem;
 
         &::marker {
           content: url("../../images/icon-check.svg");
