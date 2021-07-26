@@ -46,6 +46,10 @@
 
       // slider
       &__input {
+        width: 27.9em;
+        height: 8px;
+        outline: none;
+        -webkit-appearance: none;
         background: linear-gradient(
           to right,
           $color-strong-cyan 0%,
@@ -54,11 +58,67 @@
           $color-light-grayish-blue 100%
         );
         border-radius: 12px;
-        height: 8px;
-        width: 27.9em;
-        outline: none;
         transition: background 450ms ease-in;
-        -webkit-appearance: none;
+
+        //* override default slider input styles.
+        /*
+        following code blocks is taking from https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/
+      
+        Note that while we’re repeating code here, that’s necessary as you can’t comma-separate these type of selectors. Browsers will drop the entire selector if it doesn’t understand a part of it.
+        */
+
+        // webkit
+        &[type="range"]::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          border: 1px solid #000000;
+          height: 36px;
+          width: 16px;
+          border-radius: 3px;
+          background: #ffffff;
+          cursor: pointer;
+          margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+        }
+
+        // firefox
+        &[type="range"]::-moz-range-thumb {
+          -webkit-appearance: none;
+          border: 1px solid #000000;
+          height: 36px;
+          width: 16px;
+          border-radius: 3px;
+          background: #ffffff;
+          cursor: pointer;
+          margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+        }
+
+        // IE
+        &[type="range"]::-ms-thumb {
+          -webkit-appearance: none;
+          border: 1px solid #000000;
+          height: 36px;
+          width: 16px;
+          border-radius: 3px;
+          background: #ffffff;
+          cursor: pointer;
+          margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+        }
+
+        &[type="range"]:focus {
+          outline: none;
+        }
+
+        &[type="range"]::-ms-track {
+          width: 100%;
+          cursor: pointer;
+
+          /* Hides the slider so custom styles can be added */
+          background: transparent;
+          border-color: transparent;
+          color: transparent;
+        }
       }
 
       // output price section
