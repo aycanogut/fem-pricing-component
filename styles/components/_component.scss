@@ -181,7 +181,8 @@
     //* component toggle section
     &__toggle {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
+      margin: 0 0 0 -12px;
 
       // text parts ( monthly and yearly billing )
       &__monthly,
@@ -189,22 +190,16 @@
         color: $color-grayish-blue;
       }
 
-      &__monthly {
-        padding-left: 2.2em;
-      }
-
-      &__yearly {
-        padding-right: 2.2em;
-      }
       // toggle switcher (I used a method from W3School ==> https://www.w3schools.com/howto/howto_css_switch.asp)
       // the switch - the box around the slider
 
       &__switch {
+        @include transition(0.4s ease);
         position: relative;
         display: inline-block;
         width: 42px;
         height: 22px;
-        @include transition(0.4s ease);
+        margin-inline: 1em;
 
         // hide default HTML checkbox
         &__input {
@@ -255,6 +250,7 @@
           }
         }
       }
+
       // discount badge
       &__discount {
       }
