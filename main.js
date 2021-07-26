@@ -56,5 +56,5 @@ document.querySelector('.container').innerHTML = `
 // change the slider background-color on change of the input slides
 const slider = document.querySelector('input[type = "range"]').oninput = function () {
   let value = (this.value - this.min) / (this.max - this.min) * 100;
-  this.style.background = 'linear-gradient(to right, #10D5C2 0%, #10D5C2 ' + value + '%, #EAEEFB ' + value + '%, #EAEEFB 100%)';
+  this.style.background = 'linear-gradient(to right, #A5F3EB 0%, #A5F3EB ' + value + '%, #EAEEFB ' + value + '%, #EAEEFB 100%)';
 }
