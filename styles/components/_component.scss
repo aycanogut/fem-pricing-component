@@ -52,8 +52,8 @@
         -webkit-appearance: none;
         background: linear-gradient(
           to right,
-          $color-strong-cyan 0%,
-          $color-strong-cyan 50%,
+          $color-soft-cyan 0%,
+          $color-soft-cyan 50%,
           $color-light-grayish-blue 50%,
           $color-light-grayish-blue 100%
         );
@@ -69,41 +69,79 @@
 
         // webkit
         &[type="range"]::-webkit-slider-thumb {
+          @include transition(0.4s ease);
           -webkit-appearance: none;
-          border: 1px solid #000000;
-          height: 36px;
-          width: 16px;
-          border-radius: 3px;
-          background: #ffffff;
+          width: 40px;
+          height: 40px;
+          border: none;
           cursor: pointer;
-          margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
-          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+          background: no-repeat center url("../../images/icon-slider.svg")
+            $color-strong-cyan;
+          box-shadow: 0px 12px 26px 5px rgba($color-strong-cyan, 0.6);
+          border-radius: 50%;
+
+          &:hover,
+          &:focus {
+            @include transition(0.4s ease);
+            background-color: $color-green-cyan;
+            box-shadow: 0px 12px 26px 5px rgba($color-strong-cyan, 0.65);
+          }
+
+          // cut the index finger when item is dragged :)
+          &:active {
+            cursor: grabbing;
+          }
         }
 
         // firefox
         &[type="range"]::-moz-range-thumb {
+          @include transition(0.4s ease);
           -webkit-appearance: none;
-          border: 1px solid #000000;
-          height: 36px;
-          width: 16px;
-          border-radius: 3px;
-          background: #ffffff;
+          width: 40px;
+          height: 40px;
+          border: none;
           cursor: pointer;
-          margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
-          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+          background: no-repeat center url("../../images/icon-slider.svg")
+            $color-strong-cyan;
+          box-shadow: 0px 12px 26px 5px rgba($color-strong-cyan, 0.6);
+          border-radius: 50%;
+
+          &:hover,
+          &:focus {
+            @include transition(0.4s ease);
+            background-color: $color-green-cyan;
+            box-shadow: 0px 12px 26px 5px rgba($color-strong-cyan, 0.65);
+          }
+
+          // cut the index finger when item is dragged :)
+          &:active {
+            cursor: grabbing;
+          }
         }
 
-        // IE
-        &[type="range"]::-ms-thumb {
+        IE &[type="range"]::-ms-thumb {
+          @include transition(0.4s ease);
           -webkit-appearance: none;
-          border: 1px solid #000000;
-          height: 36px;
-          width: 16px;
-          border-radius: 3px;
-          background: #ffffff;
+          width: 40px;
+          height: 40px;
+          border: none;
           cursor: pointer;
-          margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
-          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+          background: no-repeat center url("../../images/icon-slider.svg")
+            $color-strong-cyan;
+          box-shadow: 0px 12px 26px 5px rgba($color-strong-cyan, 0.6);
+          border-radius: 50%;
+
+          &:hover,
+          &:focus {
+            @include transition(0.4s ease);
+            background-color: $color-green-cyan;
+            box-shadow: 0px 12px 26px 5px rgba($color-strong-cyan, 0.65);
+          }
+
+          // cut the index finger when item is dragged :)
+          &:active {
+            cursor: grabbing;
+          }
         }
 
         &[type="range"]:focus {
