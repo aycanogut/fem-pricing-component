@@ -4,6 +4,7 @@
 
 // main component
 .component {
+  @include box-shadow(0px 15px 65px -5px rgba(0, 0, 0, 0.1));
   margin: 4.8em 2.4em 8.8em 2.4em; //todo update it
 
   //* component header section
@@ -25,7 +26,6 @@
   &__body {
     margin: 2.4em 0 0 0;
     background-color: $color-white;
-    border: 1px solid black;
   }
 
   //* component topper section
@@ -70,6 +70,7 @@
         // webkit
         &[type="range"]::-webkit-slider-thumb {
           @include transition(0.4s ease);
+          @include box-shadow(0px 12px 26px 5px rgba($color-strong-cyan, 0.6));
           -webkit-appearance: none;
           width: 40px;
           height: 40px;
@@ -77,14 +78,15 @@
           cursor: pointer;
           background: no-repeat center url("../../images/icon-slider.svg")
             $color-strong-cyan;
-          box-shadow: 0px 12px 26px 5px rgba($color-strong-cyan, 0.6);
           border-radius: 50%;
 
           &:hover,
           &:focus {
             @include transition(0.4s ease);
+            @include box-shadow(
+              0px 12px 26px 5px rgba($color-strong-cyan, 0.65)
+            );
             background-color: $color-green-cyan;
-            box-shadow: 0px 12px 26px 5px rgba($color-strong-cyan, 0.65);
           }
 
           // cut the index finger when item is dragged :)
@@ -96,6 +98,7 @@
         // firefox
         &[type="range"]::-moz-range-thumb {
           @include transition(0.4s ease);
+          @include box-shadow(0px 12px 26px 5px rgba($color-strong-cyan, 0.6));
           -webkit-appearance: none;
           width: 40px;
           height: 40px;
@@ -103,14 +106,15 @@
           cursor: pointer;
           background: no-repeat center url("../../images/icon-slider.svg")
             $color-strong-cyan;
-          box-shadow: 0px 12px 26px 5px rgba($color-strong-cyan, 0.6);
           border-radius: 50%;
 
           &:hover,
           &:focus {
             @include transition(0.4s ease);
+            @include box-shadow(
+              0px 12px 26px 5px rgba($color-strong-cyan, 0.65)
+            );
             background-color: $color-green-cyan;
-            box-shadow: 0px 12px 26px 5px rgba($color-strong-cyan, 0.65);
           }
 
           // cut the index finger when item is dragged :)
@@ -121,6 +125,7 @@
 
         IE &[type="range"]::-ms-thumb {
           @include transition(0.4s ease);
+          @include box-shadow(0px 12px 26px 5px rgba($color-strong-cyan, 0.6));
           -webkit-appearance: none;
           width: 40px;
           height: 40px;
@@ -128,14 +133,15 @@
           cursor: pointer;
           background: no-repeat center url("../../images/icon-slider.svg")
             $color-strong-cyan;
-          box-shadow: 0px 12px 26px 5px rgba($color-strong-cyan, 0.6);
           border-radius: 50%;
 
           &:hover,
           &:focus {
             @include transition(0.4s ease);
+            @include box-shadow(
+              0px 12px 26px 5px rgba($color-strong-cyan, 0.65)
+            );
             background-color: $color-green-cyan;
-            box-shadow: 0px 12px 26px 5px rgba($color-strong-cyan, 0.65);
           }
 
           // cut the index finger when item is dragged :)
@@ -207,7 +213,7 @@
           }
 
           &:focus + .component__topper__toggle__switch__slider {
-            box-shadow: 0 0 1px $color-strong-cyan;
+            @include box-shadow(0 0 1px $color-strong-cyan);
           }
 
           &:checked + .component__topper__toggle__switch__slider:before {
