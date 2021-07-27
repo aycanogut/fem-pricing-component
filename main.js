@@ -65,10 +65,10 @@ const sliderStyling = () => {
 
 sliderStyling();
 
-// change the pageviews title and price on slide events
+// change the pageviews text and price on slide events
 const changeTitle = () => {
 
-  // title of header ( PAGEVIEWS )
+  // text ==> PAGEVIEWS 
   const title = document.querySelector('.component__topper__pageviews');
 
   // price
