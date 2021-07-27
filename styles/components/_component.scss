@@ -181,7 +181,7 @@
     &__toggle {
       display: flex;
       justify-content: center;
-      margin: 0 0 0 -12px;
+      margin: 0 0 0 3.3em;
 
       // text parts ( monthly and yearly billing )
       &__monthly,
@@ -255,6 +255,7 @@
         @include pseudo(before, "-25%", 2px, 5px);
         width: 41px;
         height: 19px;
+        margin: 0 0 0 7px;
         border-radius: 30px;
         background-color: rgba($color-light-red, 0.2);
         color: $color-light-red;
