@@ -252,30 +252,18 @@
 
       // discount badge
       &__discount {
-        position: relative;
+        @include pseudo(before, "-25%", 2px, 5px);
+        width: 41px;
+        height: 19px;
+        border-radius: 30px;
+        background-color: rgba($color-light-red, 0.2);
+        color: $color-light-red;
 
-        span {
-          position: absolute;
-          top: 2px;
-          left: 5px;
-          width: 41px;
+        //todo arrange spacing
+        @include mq(desktop) {
+          @include pseudo(before, "25% discount", 2px, 5px);
+          width: 80px;
           height: 19px;
-          border-radius: 30px;
-          background-color: rgba($color-light-red, 0.2);
-          color: $color-light-red;
-
-          @include mq(desktop) {
-            width: 80px;
-            height: 19px;
-          }
-
-          &::before {
-            content: "-25%";
-
-            @include mq(desktop) {
-              content: "25% discount";
-            }
-          }
         }
       }
     }
