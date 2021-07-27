@@ -30,7 +30,6 @@ document.querySelector('.container').innerHTML = `
             </label>
           <p class="component__topper__toggle__yearly">Yearly Billing</p>
           <span class="component__topper__toggle__discount">
-            <span></span>
           </span> 
         </label>
       <form>
