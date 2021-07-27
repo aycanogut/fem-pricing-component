@@ -298,11 +298,17 @@
 
     // start trial button
     &__button {
+      @include transition(0.4s ease);
       margin: 2.8rem 0 0 0;
       padding: 1em 3.52em;
       border-radius: 2em;
       cursor: pointer;
       background-color: $color-dark-desaturated-blue;
+
+      &:hover {
+        @include transition(0.4s ease);
+        opacity: 0.9;
+      }
 
       &__item {
         display: block;
