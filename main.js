@@ -18,7 +18,7 @@ const createUI = () => {
           <form>
             <label for="slider" class="component__topper__slider">
               <input type="range" name="slider" min="1" max="5" step="1" value="3" class="component__topper__slider__input">
-              <output for="slider" class="component__topper__slider__output">$${16}.00 <span class="component__topper__slider__month">/ month</span></output>
+              <output for="slider" class="component__topper__slider__output">$16.00 <span class="component__topper__slider__month">/ month</span></output>
             </label>
             <label class="component__topper__toggle">
               <p class="component__topper__toggle__monthly">Monthly Billing</p>
@@ -56,9 +56,46 @@ const createUI = () => {
 createUI();
 
 // change the slider background-color on change of the input slides
-const slider = () => {
+const sliderStyling = () => {
   const slider = document.querySelector('input[type = "range"]').oninput = function () {
     let value = (this.value - this.min) / (this.max - this.min) * 100;
     this.style.background = 'linear-gradient(to right, #A5F3EB 0%, #A5F3EB ' + value + '%, #EAEEFB ' + value + '%, #EAEEFB 100%)';
   }
 };
+
+sliderStyling();
+
+// change the pageviews title and price on slide events
+const changeTitle = () => {
+
+  // title of header ( PAGEVIEWS )
+  const title = document.querySelector('.component__topper__pageviews');
+
+  // price
+  const price = document.querySelector('.component__topper__slider__output');
+
+  // slider input value 
+  const sliderValue = document.querySelector('.component__topper__slider__input');
+
+  // update the title text when slider is changed
+  sliderValue.addEventListener('change', () => {
+    if (sliderValue.value == 1) {
+      title.innerHTML = '10k pageviews';
+      price.innerHTML = '$ 8.00';
+    } else if (sliderValue.value == 2) {
+      title.innerHTML = '50k pageviews';
+      price.innerHTML = '$ 12.00';
+    } else if (sliderValue.value == 3) {
+      title.innerHTML = '100k pageviews';
+      price.innerHTML = '$ 16.00';
+    } else if (sliderValue.value == 4) {
+      title.innerHTML = '500k pageviews';
+      price.innerHTML = '$ 24.00';
+    } else if (sliderValue.value == 5) {
+      title.innerHTML = '1m pageviews';
+      price.innerHTML = '$ 36.00';
+    }
+  })
+};
+
+changeTitle();
