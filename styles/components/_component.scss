@@ -301,9 +301,12 @@
       margin: 2.8rem 0 0 0;
       padding: 1em 3.52em;
       border-radius: 2em;
+      cursor: pointer;
       background-color: $color-dark-desaturated-blue;
 
       &__item {
+        display: block;
+        width: 100%;
         color: $color-light-grayish-blue;
       }
     }
