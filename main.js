@@ -27,8 +27,7 @@ const createUI = () => {
                   <span class="component__topper__toggle__switch__slider"></span>
                 </label>
               <p class="component__topper__toggle__yearly">Yearly Billing</p>
-              <span class="component__topper__toggle__discount">
-              </span> 
+              <span class="component__topper__toggle__discount"></span> 
             </label>
           <form>
         </section>
@@ -66,36 +65,37 @@ const sliderStyling = () => {
 sliderStyling();
 
 // change the pageviews text and price on slide events
-const changeTitle = () => {
+const changeDOM = () => {
 
   // text ==> PAGEVIEWS 
-  const title = document.querySelector('.component__topper__pageviews');
+  let title = document.querySelector('.component__topper__pageviews');
 
   // price
-  const price = document.querySelector('.component__topper__slider__output');
+  let price = document.querySelector('.component__topper__slider__output');
 
   // slider input value 
   const sliderValue = document.querySelector('.component__topper__slider__input');
+
 
   // update the title text when slider is changed
   sliderValue.addEventListener('change', () => {
     if (sliderValue.value == 1) {
       title.innerHTML = '10k pageviews';
-      price.innerHTML = '$ 8.00';
+      price.innerHTML = `$ ${8}.00`;
     } else if (sliderValue.value == 2) {
       title.innerHTML = '50k pageviews';
-      price.innerHTML = '$ 12.00';
+      price.innerHTML = `$ ${12}.00`;
     } else if (sliderValue.value == 3) {
       title.innerHTML = '100k pageviews';
-      price.innerHTML = '$ 16.00';
+      price.innerHTML = `$ ${16}.00`;
     } else if (sliderValue.value == 4) {
       title.innerHTML = '500k pageviews';
-      price.innerHTML = '$ 24.00';
+      price.innerHTML = `$ ${24}.00`;
     } else if (sliderValue.value == 5) {
       title.innerHTML = '1m pageviews';
-      price.innerHTML = '$ 36.00';
+      price.innerHTML = `$ ${36}.00`;
     }
   })
 };
 
-changeTitle();
+changeDOM();
