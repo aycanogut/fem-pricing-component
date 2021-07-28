@@ -9,9 +9,21 @@ body {
 .component {
   // header
   &__header {
+    &__title {
+      font-size: 2em;
+
+      @include mq(desktop) {
+        font-size: 2.8em;
+      }
+    }
+
     &__text {
       font-size: 1.3em;
       line-height: 26px;
+
+      @include mq(desktop) {
+        font-size: 1.56em;
+      }
     }
   }
 
