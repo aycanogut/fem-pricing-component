@@ -41,6 +41,10 @@
     // pageviews
     &__pageviews {
       color: $color-grayish-blue;
+
+      @include mq(desktop) {
+        position: absolute;
+      }
     }
 
     //* slider section
@@ -179,11 +183,22 @@
         align-items: center;
         margin: 4rem 0 3.6rem 0;
         color: $color-dark-desaturated-blue;
+
+        @include mq(desktop) {
+          margin: 0 0 0 6.9em;
+        }
       }
 
       // '/ month' section
       &__month {
         color: $color-grayish-blue;
+      }
+
+      @include mq(desktop) {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: 1.1em 0 0 0;
       }
     }
 
@@ -277,6 +292,16 @@
           height: 19px;
         }
       }
+    }
+
+    form {
+      @include mq(desktop) {
+        margin: 0 auto;
+      }
+    }
+
+    @include mq(desktop) {
+      display: flex;
     }
   }
 
