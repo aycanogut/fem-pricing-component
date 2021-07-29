@@ -67,16 +67,20 @@ sliderStyling();
 // changes the pageviews text and price on slider input events
 const updatePriceSlider = () => {
 
-  // text ==> PAGEVIEWS 
+  // PAGEVIEWS text
   let title = document.querySelector('.component__topper__pageviews');
 
-  // price
+  // big price text
   let price = document.querySelector('.component__topper__slider__output');
 
   // slider input value 
   const sliderValue = document.querySelector('.component__topper__slider__input');
 
-  const monthHTML = '<span class="component__topper__slider__month">/ month</span>';
+  // toggle switch buttons itself
+  const toggleSwitch = document.querySelector('.component__topper__toggle__switch__slider');
+
+  // ' month ' text html tag
+  let monthHTML = '<span class="component__topper__slider__month">/ month</span>';
 
 
   // update the title text when slider is changed
@@ -84,20 +88,40 @@ const updatePriceSlider = () => {
     if (sliderValue.value == 1) {
       title.innerHTML = '10k pageviews';
       price.innerHTML = `$ ${8}.00 ${monthHTML}`;
+      togglePrice(toggleSwitch, price, 8, 6);
     } else if (sliderValue.value == 2) {
       title.innerHTML = '50k pageviews';
       price.innerHTML = `$ ${12}.00 ${monthHTML}`;
+      togglePrice(toggleSwitch, price, 12, 9);
     } else if (sliderValue.value == 3) {
       title.innerHTML = '100k pageviews';
       price.innerHTML = `$ ${16}.00 ${monthHTML}`;
+      togglePrice(toggleSwitch, price, 16, 12);
     } else if (sliderValue.value == 4) {
       title.innerHTML = '500k pageviews';
       price.innerHTML = `$ ${24}.00 ${monthHTML}`;
+      togglePrice(toggleSwitch, price, 24, 18);
     } else if (sliderValue.value == 5) {
       title.innerHTML = '1m pageviews';
       price.innerHTML = `$ ${36}.00 ${monthHTML}`;
+      togglePrice(toggleSwitch, price, 36, 27);
     }
   })
 };
 
 updatePriceSlider();
+
+// switch the price to half when button is toggled
+function togglePrice(toggleDOM, priceDOM, number, numberUpdated) {
+
+  // ' month ' text html tag
+  let monthHTML = '<span class="component__topper__slider__month">/ month</span>';
+
+  toggleDOM.addEventListener('click', () => {
+    if (priceDOM.innerHTML === `$ ${number}.00 ${monthHTML}`) {
+      priceDOM.innerHTML = `$ ${numberUpdated}.00 ${monthHTML}`
+    } else { // return to the old value on the second click
+      priceDOM.innerHTML = `$ ${number}.00 ${monthHTML}`
+    }
+  });
+};
