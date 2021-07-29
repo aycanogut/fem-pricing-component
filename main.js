@@ -76,24 +76,26 @@ const changeDOM = () => {
   // slider input value 
   const sliderValue = document.querySelector('.component__topper__slider__input');
 
+  const monthHTML = '<span class="component__topper__slider__month">/ month</span>';
+
 
   // update the title text when slider is changed
   sliderValue.addEventListener('change', () => {
     if (sliderValue.value == 1) {
       title.innerHTML = '10k pageviews';
-      price.innerHTML = `$ ${8}.00`;
+      price.innerHTML = `$ ${8}.00 ${monthHTML}`;
     } else if (sliderValue.value == 2) {
       title.innerHTML = '50k pageviews';
-      price.innerHTML = `$ ${12}.00`;
+      price.innerHTML = `$ ${12}.00 ${monthHTML}`;
     } else if (sliderValue.value == 3) {
       title.innerHTML = '100k pageviews';
-      price.innerHTML = `$ ${16}.00`;
+      price.innerHTML = `$ ${16}.00 ${monthHTML}`;
     } else if (sliderValue.value == 4) {
       title.innerHTML = '500k pageviews';
-      price.innerHTML = `$ ${24}.00`;
+      price.innerHTML = `$ ${24}.00 ${monthHTML}`;
     } else if (sliderValue.value == 5) {
       title.innerHTML = '1m pageviews';
-      price.innerHTML = `$ ${36}.00`;
+      price.innerHTML = `$ ${36}.00 ${monthHTML}`;
     }
   })
 };
