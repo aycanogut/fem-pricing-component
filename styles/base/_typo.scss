@@ -34,6 +34,10 @@ body {
       font-weight: map-get($font-weight, semi-bold);
       letter-spacing: 0.13em;
       text-transform: uppercase;
+
+      @include mq(desktop) {
+        font-size: 1.45em;
+      }
     }
 
     &__slider {
