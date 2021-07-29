@@ -12,6 +12,7 @@
     background: no-repeat url("../../images/pattern-circles.svg") center center;
     padding: 4.2em 0 3.6em 0;
 
+    // desktop-breakpoint
     @include mq(desktop) {
       background-position: center 1.9em;
       padding: 6em 0 6.2em 0;
@@ -43,6 +44,7 @@
     &__pageviews {
       color: $color-grayish-blue;
 
+      // desktop-breakpoint
       @include mq(desktop) {
         position: absolute;
         top: 6rem;
@@ -174,6 +176,7 @@
           color: transparent;
         }
 
+        // desktop-breakpoint
         @include mq(desktop) {
           width: 44.5rem;
           margin: 4.4rem 0 5.5rem 0;
@@ -188,6 +191,7 @@
         margin: 4rem 0 3.6rem 0;
         color: $color-dark-desaturated-blue;
 
+        // desktop-breakpoint
         @include mq(desktop) {
           margin: 0 0 0 24.5rem;
         }
@@ -197,11 +201,13 @@
       &__month {
         color: $color-grayish-blue;
 
+        // desktop-breakpoint
         @include mq(desktop) {
           padding: 0 0 0 0.8rem;
         }
       }
 
+      // desktop-breakpoint
       @include mq(desktop) {
         display: flex;
         flex-direction: column-reverse;
@@ -281,6 +287,11 @@
             border-radius: 50%;
           }
         }
+
+        // desktop breakpoint
+        @include mq(desktop) {
+          margin-inline: 1.7rem;
+        }
       }
 
       // discount badge
@@ -294,20 +305,33 @@
         color: $color-light-red;
 
         //todo arrange spacing
+        // desktop-breakpoint
         @include mq(desktop) {
           @include pseudo(before, "25% discount", 2px, 5px);
           width: 80px;
           height: 19px;
         }
+
+        // desktop breakpoint
+        @include mq(desktop) {
+          margin: 0 0 0 10px;
+        }
+      }
+
+      // desktop breakpoint
+      @include mq(desktop) {
+        margin: 0 0 0 9.5rem;
       }
     }
 
     form {
+      // desktop-breakpoint
       @include mq(desktop) {
         margin: 0 auto;
       }
     }
 
+    // desktop-breakpoint
     @include mq(desktop) {
       display: flex;
     }
