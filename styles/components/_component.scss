@@ -39,7 +39,7 @@
     padding: 3.6em 0 3.8em 0;
     border-bottom: 1px solid $color-light-grayish-blue;
 
-    // pageviews
+    // number of views ==> pageviews
     &__pageviews {
       color: $color-grayish-blue;
 
@@ -176,6 +176,7 @@
 
         @include mq(desktop) {
           width: 44.5rem;
+          margin: 4.4rem 0 5.5rem 0;
         }
       }
 
