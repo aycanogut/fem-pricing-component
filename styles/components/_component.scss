@@ -172,7 +172,7 @@
         }
 
         @include mq(desktop) {
-          width: 44.5em;
+          width: 44.5rem;
         }
       }
 
@@ -185,20 +185,24 @@
         color: $color-dark-desaturated-blue;
 
         @include mq(desktop) {
-          margin: 0 0 0 6.9em;
+          margin: 0 0 0 24.5rem;
         }
       }
 
       // '/ month' section
       &__month {
         color: $color-grayish-blue;
+
+        @include mq(desktop) {
+          padding: 0 0 0 0.8rem;
+        }
       }
 
       @include mq(desktop) {
         display: flex;
         flex-direction: column-reverse;
         width: 100%;
-        margin: 1.1em 0 0 0;
+        margin: 1.1rem 0 0 0;
       }
     }
 
