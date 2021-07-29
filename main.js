@@ -65,7 +65,7 @@ const sliderStyling = () => {
 sliderStyling();
 
 // change the pageviews text and price on slide events
-const changeDOM = () => {
+const updatePrice = () => {
 
   // text ==> PAGEVIEWS 
   let title = document.querySelector('.component__topper__pageviews');
@@ -100,4 +100,4 @@ const changeDOM = () => {
   })
 };
 
-changeDOM();
+updatePrice();
