@@ -34,6 +34,7 @@
 
   //* component topper section
   &__topper {
+    position: relative;
     text-align: center;
     padding: 3.6em 0 3.8em 0;
     border-bottom: 1px solid $color-light-grayish-blue;
@@ -44,6 +45,8 @@
 
       @include mq(desktop) {
         position: absolute;
+        top: 6rem;
+        left: 4.6rem;
       }
     }
 
