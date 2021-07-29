@@ -41,12 +41,20 @@ body {
         font-size: 3rem;
         font-weight: map-get($font-weight, extra-bold);
         letter-spacing: 1.2px;
+
+        @include mq(desktop) {
+          font-size: 3.68rem;
+        }
       }
 
       &__month {
         font-size: 1.3rem;
         font-weight: map-get($font-weight, semi-bold);
         letter-spacing: 0;
+
+        @include mq(desktop) {
+          font-size: 1.55rem;
+        }
       }
     }
 
