@@ -16,8 +16,9 @@ html {
 }
 
 body {
-  background: no-repeat url(../../images/bg-pattern.svg) 0% -14%;
-
+  background: no-repeat
+    url(https://image.freepik.com/free-photo/hand-painted-watercolor-background-with-sky-clouds-shape_24972-1095.jpg)
+    0% -14%;
   @include mq(desktop) {
     background-position: top center;
   }
