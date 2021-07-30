@@ -23,7 +23,7 @@ const createUI = () => {
             <label class="component__topper__toggle">
               <p class="component__topper__toggle__monthly">Monthly Billing</p>
                 <label class="component__topper__toggle__switch">
-                  <input type="checkbox" class="component__topper__toggle__switch__input">
+                  <input type="checkbox" class="component__topper__toggle__switch__input" unchecked>
                   <span class="component__topper__toggle__switch__slider"></span>
                 </label>
               <p class="component__topper__toggle__yearly">Yearly Billing</p>
@@ -77,51 +77,71 @@ const updatePriceSlider = () => {
   const sliderValue = document.querySelector('.component__topper__slider__input');
 
   // toggle switch buttons itself
-  const toggleSwitch = document.querySelector('.component__topper__toggle__switch__slider');
+  const toggleSwitch = document.querySelector('.component__topper__toggle__switch__input');
+
+  toggleSwitch.addEventListener('change', () => {
+    if (toggleSwitch.checked === true) {
+      console.log('true');
+    } else if (toggleSwitch.checked === false) {
+      console.log('false');
+    }
+  })
 
   // ' month ' text html tag
   let monthHTML = '<span class="component__topper__slider__month">/ month</span>';
 
 
   // update the title text when slider is changed
-  sliderValue.addEventListener('change', () => {
+  sliderValue.addEventListener('mouseup', () => {
     if (sliderValue.value == 1) {
       title.innerHTML = '10k pageviews';
       price.innerHTML = `$ ${8}.00 ${monthHTML}`;
-      togglePrice(toggleSwitch, price, 8, 6);
+      toggleSwitchListener(toggleSwitch, price, title, 10, 8, 6);
     } else if (sliderValue.value == 2) {
       title.innerHTML = '50k pageviews';
       price.innerHTML = `$ ${12}.00 ${monthHTML}`;
-      togglePrice(toggleSwitch, price, 12, 9);
-    } else if (sliderValue.value == 3) {
-      title.innerHTML = '100k pageviews';
-      price.innerHTML = `$ ${16}.00 ${monthHTML}`;
-      togglePrice(toggleSwitch, price, 16, 12);
-    } else if (sliderValue.value == 4) {
-      title.innerHTML = '500k pageviews';
-      price.innerHTML = `$ ${24}.00 ${monthHTML}`;
-      togglePrice(toggleSwitch, price, 24, 18);
-    } else if (sliderValue.value == 5) {
-      title.innerHTML = '1m pageviews';
-      price.innerHTML = `$ ${36}.00 ${monthHTML}`;
-      togglePrice(toggleSwitch, price, 36, 27);
+      toggleSwitchListener(toggleSwitch, price, title, 50, 12, 9);
     }
-  })
+  });
 };
 
 updatePriceSlider();
 
-// switch the price to half when button is toggled
-function togglePrice(toggleDOM, priceDOM, number, numberUpdated) {
+
+// else if (sliderValue.value == 2) {
+//   if (toggleSwitch.checked === false) {
+//     title.innerHTML = '50k pageviews';
+//     price.innerHTML = `$ ${12}.00 ${monthHTML}`;
+//     togglePrice(toggleSwitch, price, 12, 9);
+//   } else if (toggleSwitch.checked === true) {
+//     price.innerHTML = `$ ${9}.00 ${monthHTML}`;
+//   }
+// }
+// else if (sliderValue.value == 3) {
+//   title.innerHTML = '100k pageviews';
+//   price.innerHTML = `$ ${16}.00 ${monthHTML}`;
+//   // togglePrice(toggleSwitch, price, 16, 12);
+// } else if (sliderValue.value == 4) {
+//   title.innerHTML = '500k pageviews';
+//   price.innerHTML = `$ ${24}.00 ${monthHTML}`;
+//   // togglePrice(toggleSwitch, price, 24, 18);
+// } else if (sliderValue.value == 5) {
+//   title.innerHTML = '1m pageviews';
+//   price.innerHTML = `$ ${36}.00 ${monthHTML}`;
+//   // togglePrice(toggleSwitch, price, 36, 27);
+// }
+
+function toggleSwitchListener(target, priceHTML, titleHTML, pageviews, price, priceUpdated) {
 
   // ' month ' text html tag
   let monthHTML = '<span class="component__topper__slider__month">/ month</span>';
 
-  toggleDOM.addEventListener('click', () => {
-    if (priceDOM.innerHTML === `$ ${number}.00 ${monthHTML}`) {
-      priceDOM.innerHTML = `$ ${numberUpdated}.00 ${monthHTML}`
-    } else { // return to the old value on the second click
-      priceDOM.innerHTML = `$ ${number}.00 ${monthHTML}`
+  target.addEventListener('click', () => {
+    if (target.checked === true) {
+      priceHTML.innerHTML = `$ ${priceUpdated}.00 ${monthHTML}`;
+    } else if (target.checked === false) {
+      titleHTML.innerHTML = `${pageviews} pageviews`;
+      priceHTML.innerHTML = `$ ${price}.00 ${monthHTML}`;
     }
-  });
-};
+  })
+}
