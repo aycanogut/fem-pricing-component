@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  background: no-repeat url("../../images/bg-pattern.svg") 0% -14%;
+  background: no-repeat url(../../images/bg-pattern.svg) 0% -14%;
 
   @include mq(desktop) {
     background-position: top center;
