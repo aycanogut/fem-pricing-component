@@ -1,5 +1,4 @@
 import './styles/style.css';
-import './images';
 
 // create main component on DOM
 const createUI = () => {
@@ -64,7 +63,6 @@ const sliderStyling = () => {
 };
 
 sliderStyling();
-
 
 // changes the pageviews text and price on slider input events
 const updatePriceSlider = () => {
@@ -138,7 +136,6 @@ const updatePriceSlider = () => {
         }
       });
     }
-
   });
 };
 
