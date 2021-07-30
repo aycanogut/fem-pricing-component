@@ -1,4 +1,5 @@
-import './styles/style.css'
+import './styles/style.css';
+import './images';
 
 // create main component on DOM
 const createUI = () => {
@@ -64,6 +65,7 @@ const sliderStyling = () => {
 
 sliderStyling();
 
+
 // changes the pageviews text and price on slider input events
 const updatePriceSlider = () => {
 
@@ -74,74 +76,70 @@ const updatePriceSlider = () => {
   let price = document.querySelector('.component__topper__slider__output');
 
   // slider input value 
-  const sliderValue = document.querySelector('.component__topper__slider__input');
+  let sliderValue = document.querySelector('.component__topper__slider__input');
 
   // toggle switch buttons itself
-  const toggleSwitch = document.querySelector('.component__topper__toggle__switch__input');
-
-  toggleSwitch.addEventListener('change', () => {
-    if (toggleSwitch.checked === true) {
-      console.log('true');
-    } else if (toggleSwitch.checked === false) {
-      console.log('false');
-    }
-  })
+  let toggleSwitch = document.querySelector('.component__topper__toggle__switch__input');
 
   // ' month ' text html tag
   let monthHTML = '<span class="component__topper__slider__month">/ month</span>';
-
 
   // update the title text when slider is changed
   sliderValue.addEventListener('mouseup', () => {
     if (sliderValue.value == 1) {
       title.innerHTML = '10k pageviews';
       price.innerHTML = `$ ${8}.00 ${monthHTML}`;
-      toggleSwitchListener(toggleSwitch, price, title, 10, 8, 6);
+
+      toggleSwitch.addEventListener('change', () => {
+        if (toggleSwitch.checked === true) {
+          price.innerHTML = `$ ${6}.00 ${monthHTML}`;
+        } else {
+          price.innerHTML = `$ ${8}.00 ${monthHTML}`;
+        }
+      });
     } else if (sliderValue.value == 2) {
       title.innerHTML = '50k pageviews';
       price.innerHTML = `$ ${12}.00 ${monthHTML}`;
-      toggleSwitchListener(toggleSwitch, price, title, 50, 12, 9);
+      toggleSwitch.addEventListener('change', () => {
+        if (toggleSwitch.checked === true) {
+          price.innerHTML = `$ ${9}.00 ${monthHTML}`;
+        } else {
+          price.innerHTML = `$ ${12}.00 ${monthHTML}`;
+        }
+      });
+    } else if (sliderValue.value == 3) {
+      title.innerHTML = '100k pageviews';
+      price.innerHTML = `$ ${16}.00 ${monthHTML}`;
+      toggleSwitch.addEventListener('change', () => {
+        if (toggleSwitch.checked === true) {
+          price.innerHTML = `$ ${12}.00 ${monthHTML}`;
+        } else {
+          price.innerHTML = `$ ${16}.00 ${monthHTML}`;
+        }
+      });
+    } else if (sliderValue.value == 4) {
+      title.innerHTML = '50k pageviews';
+      price.innerHTML = `$ ${24}.00 ${monthHTML}`;
+      toggleSwitch.addEventListener('change', () => {
+        if (toggleSwitch.checked === true) {
+          price.innerHTML = `$ ${18}.00 ${monthHTML}`;
+        } else {
+          price.innerHTML = `$ ${24}.00 ${monthHTML}`;
+        }
+      });
+    } else if (sliderValue.value == 5) {
+      title.innerHTML = '50k pageviews';
+      price.innerHTML = `$ ${36}.00 ${monthHTML}`;
+      toggleSwitch.addEventListener('change', () => {
+        if (toggleSwitch.checked === true) {
+          price.innerHTML = `$ ${27}.00 ${monthHTML}`;
+        } else {
+          price.innerHTML = `$ ${36}.00 ${monthHTML}`;
+        }
+      });
     }
+
   });
 };
 
 updatePriceSlider();
-
-
-// else if (sliderValue.value == 2) {
-//   if (toggleSwitch.checked === false) {
-//     title.innerHTML = '50k pageviews';
-//     price.innerHTML = `$ ${12}.00 ${monthHTML}`;
-//     togglePrice(toggleSwitch, price, 12, 9);
-//   } else if (toggleSwitch.checked === true) {
-//     price.innerHTML = `$ ${9}.00 ${monthHTML}`;
-//   }
-// }
-// else if (sliderValue.value == 3) {
-//   title.innerHTML = '100k pageviews';
-//   price.innerHTML = `$ ${16}.00 ${monthHTML}`;
-//   // togglePrice(toggleSwitch, price, 16, 12);
-// } else if (sliderValue.value == 4) {
-//   title.innerHTML = '500k pageviews';
-//   price.innerHTML = `$ ${24}.00 ${monthHTML}`;
-//   // togglePrice(toggleSwitch, price, 24, 18);
-// } else if (sliderValue.value == 5) {
-//   title.innerHTML = '1m pageviews';
-//   price.innerHTML = `$ ${36}.00 ${monthHTML}`;
-//   // togglePrice(toggleSwitch, price, 36, 27);
-// }
-
-function toggleSwitchListener(target, priceHTML, titleHTML, pageviews, price, priceUpdated) {
-
-  // ' month ' text html tag
-  let monthHTML = '<span class="component__topper__slider__month">/ month</span>';
-
-  target.addEventListener('click', () => {
-    if (target.checked === true) {
-      priceHTML.innerHTML = `$ ${priceUpdated}.00 ${monthHTML}`;
-    } else if (target.checked === false) {
-      titleHTML.innerHTML = `${pageviews} pageviews`;
-      priceHTML.innerHTML = `$ ${price}.00 ${monthHTML}`;
-    }
-  })
-}
