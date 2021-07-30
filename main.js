@@ -1,4 +1,15 @@
 import './styles/style.css';
+export const KNOWN_ASSET_TYPES = [
+  // images
+  'png',
+  'jpe?g',
+  'gif',
+  'svg',
+  'ico',
+  'webp',
+  'avif',
+]
+
 
 // create main component on DOM
 const createUI = () => {
