@@ -20,9 +20,9 @@ const createUI = () => {
             <label for="slider" class="component__topper__slider">
             <input id="slider" type="range" name="slider" min="1" max="5" step="1" value="3" class="component__topper__slider__input">
           </label>
-          <label for="slider" class="component__topper__slider">
+          <div class="component__topper__slider">
             <span  class="component__topper__slider__output">$ 16.00 <span class="component__topper__slider__month">/ month</span></span>
-          </label>
+          </div>
             </div>
             <div class="component__topper__toggle">
               <span class="component__topper__toggle__monthly">Monthly Billing</span>
