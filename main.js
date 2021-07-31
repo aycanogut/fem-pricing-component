@@ -18,12 +18,12 @@ const createUI = () => {
           <form>
             <label for="slider" class="component__topper__slider">
               <input id="slider" type="range" name="slider" min="1" max="5" step="1" value="3" class="component__topper__slider__input">
-              <output for="slider" class="component__topper__slider__output">$16.00 <span class="component__topper__slider__month">/ month</span></output>
+              <output for="slider" class="component__topper__slider__output">$ 16.00 <span class="component__topper__slider__month">/ month</span></output>
             </label>
             <label class="component__topper__toggle">
               <span class="component__topper__toggle__monthly">Monthly Billing</span>
                 <label class="component__topper__toggle__switch">
-                  <input type="checkbox" class="component__topper__toggle__switch__input" unchecked>
+                  <input type="checkbox" class="component__topper__toggle__switch__input">
                   <span class="component__topper__toggle__switch__slider"></span>
                 </label>
               <span class="component__topper__toggle__yearly">Yearly Billing</span>
@@ -82,8 +82,8 @@ const updatePriceSlider = () => {
   // ' month ' text html tag
   let monthHTML = '<span class="component__topper__slider__month">/ month</span>';
 
-  // update the title text when slider is changed
-  sliderValue.addEventListener('mouseup', () => {
+  // update the DOM elemenetst when slider is changed
+  sliderValue.addEventListener('change', () => {
     if (sliderValue.value == 1) {
       title.innerHTML = '10k pageviews';
       price.innerHTML = `$ ${8}.00 ${monthHTML}`;
@@ -137,6 +137,14 @@ const updatePriceSlider = () => {
       });
     }
   });
+
+  toggleSwitch.addEventListener('change', () => {
+    if (toggleSwitch.checked === true) {
+      price.innerHTML = `$ ${12}.00 ${monthHTML}`;
+    } else {
+      price.innerHTML = `$ ${16}.00 ${monthHTML}`;
+    }
+  })
 };
 
 updatePriceSlider();
