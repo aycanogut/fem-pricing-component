@@ -189,7 +189,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 4rem 0 3.6rem 0;
         color: $color-dark-desaturated-blue;
 
         // desktop-breakpoint
@@ -210,9 +209,6 @@
 
       // desktop-breakpoint
       @include mq(desktop) {
-        display: flex;
-        flex-direction: column-reverse;
-        width: 100%;
         margin: 1.1rem 0 0 0;
       }
     }
@@ -221,7 +217,7 @@
     &__toggle {
       display: flex;
       justify-content: center;
-      margin: 0 0 0 3.3em;
+      margin: 3.5em 0 0 3.3em;
 
       // text parts ( monthly and yearly billing )
       &__monthly,
@@ -333,7 +329,12 @@
 
       .labels {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
+
+        // desktop breakpoint
+        @include mq(desktop) {
+          flex-direction: column-reverse;
+        }
       }
     }
 
