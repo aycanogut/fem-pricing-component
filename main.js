@@ -22,8 +22,8 @@ const createUI = () => {
             </label>
             <label class="component__topper__toggle">
               <span class="component__topper__toggle__monthly">Monthly Billing</span>
-                <label class="component__topper__toggle__switch">
-                  <input type="checkbox" class="component__topper__toggle__switch__input">
+                <label for="checkbox" class="component__topper__toggle__switch">
+                  <input id="checkbox" type="checkbox" class="component__topper__toggle__switch__input">
                   <span class="component__topper__toggle__switch__slider"></span>
                 </label>
               <span class="component__topper__toggle__yearly">Yearly Billing</span>
