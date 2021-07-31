@@ -17,9 +17,9 @@ const createUI = () => {
           <h2 class="component__topper__pageviews">100k pageviews</h2>
           <form>
             <div class="labels">
-            <label for="slider" class="component__topper__slider">
-            <input id="slider" type="range" name="slider" min="1" max="5" step="1" value="3" class="component__topper__slider__input">
-          </label>
+              <label for="slider" class="component__topper__slider">
+                <input id="slider" type="range" name="slider" min="1" max="5" step="1" value="3" class="component__topper__slider__input">
+              </label>
           <div class="component__topper__slider">
             <span  class="component__topper__slider__output">$ 16.00 <span class="component__topper__slider__month">/ month</span></span>
           </div>
@@ -27,7 +27,7 @@ const createUI = () => {
             <div class="component__topper__toggle">
               <span class="component__topper__toggle__monthly">Monthly Billing</span>
                 <label for="checkbox" class="component__topper__toggle__switch">
-                  <input id="checkbox" type="checkbox" class="component__topper__toggle__switch__input">
+                  <input id="checkbox" type="checkbox" name="checkbox" class="component__topper__toggle__switch__input">
                   <span class="component__topper__toggle__switch__slider"></span>
                 </label>
               <span class="component__topper__toggle__yearly">Yearly Billing</span>
