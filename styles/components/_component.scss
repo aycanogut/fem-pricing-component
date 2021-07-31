@@ -89,8 +89,8 @@
           height: 40px;
           border: none;
           cursor: pointer;
-          background: no-repeat center url(../../images/icon-slider.png)
-            $color-strong-cyan;
+          background: no-repeat center
+            url("https://i.ibb.co/zVFGQNM/icon-slider.png") $color-strong-cyan;
           border-radius: 50%;
 
           &:hover,
@@ -117,8 +117,8 @@
           height: 40px;
           border: none;
           cursor: pointer;
-          background: no-repeat center url(../../images/icon-slider.png)
-            $color-strong-cyan;
+          background: no-repeat center
+            url("https://i.ibb.co/zVFGQNM/icon-slider.png") $color-strong-cyan;
           border-radius: 50%;
 
           &:hover,
@@ -144,8 +144,8 @@
           height: 40px;
           border: none;
           cursor: pointer;
-          background: no-repeat center url(../../images/icon-slider.png)
-            $color-strong-cyan;
+          background: no-repeat center
+            url("https://i.ibb.co/zVFGQNM/icon-slider.png") $color-strong-cyan;
           border-radius: 50%;
 
           &:hover,
@@ -356,7 +356,7 @@
         padding: 0.7rem 0 0.6rem 1.1rem;
 
         &::marker {
-          content: url("../../images/icon-check.png");
+          content: url("https://i.ibb.co/kSQ31Zt/icon-check.png");
         }
 
         &__text {
