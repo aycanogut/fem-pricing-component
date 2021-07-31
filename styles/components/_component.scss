@@ -8,8 +8,7 @@
 
   //* component header section
   &__header {
-    background: no-repeat url("https://i.ibb.co/84MPFdp/pattern-circles.png")
-      center center;
+    background: no-repeat url("../../images/pattern-circles.png") center center;
     text-align: center;
     padding: 4.2em 0 3.6em 0;
 
@@ -89,8 +88,8 @@
           height: 40px;
           border: none;
           cursor: pointer;
-          background: no-repeat center
-            url("https://i.ibb.co/zVFGQNM/icon-slider.png") $color-strong-cyan;
+          background: no-repeat center url("../../images/icon-slider.png")
+            $color-strong-cyan;
           border-radius: 50%;
 
           &:hover,
@@ -117,8 +116,8 @@
           height: 40px;
           border: none;
           cursor: pointer;
-          background: no-repeat center
-            url("https://i.ibb.co/zVFGQNM/icon-slider.png") $color-strong-cyan;
+          background: no-repeat center url("../../images/icon-slider.png")
+            $color-strong-cyan;
           border-radius: 50%;
 
           &:hover,
@@ -144,8 +143,8 @@
           height: 40px;
           border: none;
           cursor: pointer;
-          background: no-repeat center
-            url("https://i.ibb.co/zVFGQNM/icon-slider.png") $color-strong-cyan;
+          background: no-repeat center url("../../images/icon-slider.png")
+            $color-strong-cyan;
           border-radius: 50%;
 
           &:hover,
@@ -362,7 +361,7 @@
         padding: 0.7rem 0 0.6rem 1.1rem;
 
         &::marker {
-          content: url("https://i.ibb.co/kSQ31Zt/icon-check.png");
+          content: url("../../images/icon-check.png");
         }
 
         &__text {
