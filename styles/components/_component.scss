@@ -180,7 +180,7 @@
         // desktop-breakpoint
         @include mq(desktop) {
           width: 44.5rem;
-          margin: 4.4rem 0 5.5rem 0;
+          margin: 3.8rem 0 5.5rem 0;
         }
       }
 
@@ -329,6 +329,11 @@
       // desktop-breakpoint
       @include mq(desktop) {
         margin: 0 auto;
+      }
+
+      .labels {
+        display: flex;
+        flex-direction: column-reverse;
       }
     }
 

@@ -16,10 +16,14 @@ const createUI = () => {
         <section class="component__topper">
           <h2 class="component__topper__pageviews">100k pageviews</h2>
           <form>
+            <div class="labels">
             <label for="slider" class="component__topper__slider">
-              <input id="slider" type="range" name="slider" min="1" max="5" step="1" value="3" class="component__topper__slider__input">
-              <output for="slider" class="component__topper__slider__output">$ 16.00 <span class="component__topper__slider__month">/ month</span></output>
-            </label>
+            <input id="slider" type="range" name="slider" min="1" max="5" step="1" value="3" class="component__topper__slider__input">
+          </label>
+          <label for="slider" class="component__topper__slider">
+            <output for="slider" class="component__topper__slider__output">$ 16.00 <span class="component__topper__slider__month">/ month</span></output>
+          </label>
+            </div>
             <div class="component__topper__toggle">
               <span class="component__topper__toggle__monthly">Monthly Billing</span>
                 <label for="checkbox" class="component__topper__toggle__switch">
