@@ -38,13 +38,13 @@ const createUI = () => {
         <section class="component__footer">
           <ul class="component__footer__list">
             <li class="component__footer__list__item">
-              <p class="component__footer__list__item__text">Unlimited Websites</p>
+              <h4 class="component__footer__list__item__text">Unlimited Websites</h4>
             </li>  
             <li class="component__footer__list__item">
-              <p class="component__footer__list__item__text">100% data ownership</p>
+              <h4 class="component__footer__list__item__text">100% data ownership</h4>
             </li>  
             <li class="component__footer__list__item">
-            <p class="component__footer__list__item__text">Email reports</p>
+            <h4 class="component__footer__list__item__text">Email reports</h4>
             </li>  
           </ul>
           <div class="component__footer__button">
