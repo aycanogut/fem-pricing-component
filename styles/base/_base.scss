@@ -21,6 +21,7 @@ body {
   @include mq(desktop) {
     background-position: top center;
     background-size: 100% 60.3%;
+    background-color: $color-body-bg;
   }
 }
 
