@@ -21,7 +21,7 @@ const createUI = () => {
                 <input id="slider" type="range" name="slider" min="1" max="5" step="1" value="3" class="component__topper__slider__input">
               </label>
           <div class="component__topper__slider">
-            <span  class="component__topper__slider__output">$ 16.00 <span class="component__topper__slider__month">/ month</span></span>
+            <span  class="component__topper__slider__output">$16.00 <span class="component__topper__slider__month">/ month</span></span>
           </div>
             </div>
             <div class="component__topper__toggle">
@@ -90,53 +90,53 @@ const updatePriceSlider = () => {
   sliderValue.addEventListener('mousemove', () => {
     if (sliderValue.value == 1) {
       title.innerHTML = '10k pageviews';
-      price.innerHTML = `$ ${8}.00 ${monthHTML}`;
+      price.innerHTML = `$${8}.00 ${monthHTML}`;
 
       toggleSwitch.addEventListener('change', () => {
         if (toggleSwitch.checked === true) {
-          price.innerHTML = `$ ${6}.00 ${monthHTML}`;
+          price.innerHTML = `$${6}.00 ${monthHTML}`;
         } else {
-          price.innerHTML = `$ ${8}.00 ${monthHTML}`;
+          price.innerHTML = `$${8}.00 ${monthHTML}`;
         }
       });
     } else if (sliderValue.value == 2) {
       title.innerHTML = '50k pageviews';
-      price.innerHTML = `$ ${12}.00 ${monthHTML}`;
+      price.innerHTML = `$${12}.00 ${monthHTML}`;
       toggleSwitch.addEventListener('change', () => {
         if (toggleSwitch.checked === true) {
-          price.innerHTML = `$ ${9}.00 ${monthHTML}`;
+          price.innerHTML = `$${9}.00 ${monthHTML}`;
         } else {
-          price.innerHTML = `$ ${12}.00 ${monthHTML}`;
+          price.innerHTML = `$${12}.00 ${monthHTML}`;
         }
       });
     } else if (sliderValue.value == 3) {
       title.innerHTML = '100k pageviews';
-      price.innerHTML = `$ ${16}.00 ${monthHTML}`;
+      price.innerHTML = `$${16}.00 ${monthHTML}`;
       toggleSwitch.addEventListener('change', () => {
         if (toggleSwitch.checked === true) {
-          price.innerHTML = `$ ${12}.00 ${monthHTML}`;
+          price.innerHTML = `$${12}.00 ${monthHTML}`;
         } else {
-          price.innerHTML = `$ ${16}.00 ${monthHTML}`;
+          price.innerHTML = `$${16}.00 ${monthHTML}`;
         }
       });
     } else if (sliderValue.value == 4) {
       title.innerHTML = '50k pageviews';
-      price.innerHTML = `$ ${24}.00 ${monthHTML}`;
+      price.innerHTML = `$${24}.00 ${monthHTML}`;
       toggleSwitch.addEventListener('change', () => {
         if (toggleSwitch.checked === true) {
-          price.innerHTML = `$ ${18}.00 ${monthHTML}`;
+          price.innerHTML = `$${18}.00 ${monthHTML}`;
         } else {
-          price.innerHTML = `$ ${24}.00 ${monthHTML}`;
+          price.innerHTML = `$${24}.00 ${monthHTML}`;
         }
       });
     } else if (sliderValue.value == 5) {
       title.innerHTML = '50k pageviews';
-      price.innerHTML = `$ ${36}.00 ${monthHTML}`;
+      price.innerHTML = `$${36}.00 ${monthHTML}`;
       toggleSwitch.addEventListener('change', () => {
         if (toggleSwitch.checked === true) {
-          price.innerHTML = `$ ${27}.00 ${monthHTML}`;
+          price.innerHTML = `$${27}.00 ${monthHTML}`;
         } else {
-          price.innerHTML = `$ ${36}.00 ${monthHTML}`;
+          price.innerHTML = `$${36}.00 ${monthHTML}`;
         }
       });
     }
@@ -144,9 +144,9 @@ const updatePriceSlider = () => {
 
   toggleSwitch.addEventListener('change', () => {
     if (toggleSwitch.checked === true) {
-      price.innerHTML = `$ ${12}.00 ${monthHTML}`;
+      price.innerHTML = `$${12}.00 ${monthHTML}`;
     } else {
-      price.innerHTML = `$ ${16}.00 ${monthHTML}`;
+      price.innerHTML = `$${16}.00 ${monthHTML}`;
     }
   })
 };
