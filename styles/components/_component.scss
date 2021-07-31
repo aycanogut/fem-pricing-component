@@ -9,7 +9,7 @@
   //* component header section
   &__header {
     text-align: center;
-    background: no-repeat url("../../images/pattern-circles.svg") center center;
+    background: no-repeat url("../../images/pattern-circles.png") center center;
     padding: 4.2em 0 3.6em 0;
 
     // desktop-breakpoint
@@ -88,7 +88,7 @@
           height: 40px;
           border: none;
           cursor: pointer;
-          background: no-repeat center url(../../images/icon-slider.svg)
+          background: no-repeat center url(../../images/icon-slider.png)
             $color-strong-cyan;
           border-radius: 50%;
 
@@ -116,7 +116,7 @@
           height: 40px;
           border: none;
           cursor: pointer;
-          background: no-repeat center url(../../images/icon-slider.svg)
+          background: no-repeat center url(../../images/icon-slider.png)
             $color-strong-cyan;
           border-radius: 50%;
 
@@ -143,7 +143,7 @@
           height: 40px;
           border: none;
           cursor: pointer;
-          background: no-repeat center url(../../images/icon-slider.svg)
+          background: no-repeat center url(../../images/icon-slider.png)
             $color-strong-cyan;
           border-radius: 50%;
 
@@ -355,7 +355,7 @@
         padding: 0.7rem 0 0.6rem 1.1rem;
 
         &::marker {
-          content: url("../../images/icon-check.svg");
+          content: url("../../images/icon-check.png");
         }
 
         &__text {
