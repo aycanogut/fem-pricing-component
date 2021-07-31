@@ -87,7 +87,7 @@ const updatePriceSlider = () => {
   let monthHTML = '<span class="component__topper__slider__month">/ month</span>';
 
   // update the DOM elemenetst when slider is changed
-  sliderValue.addEventListener('mousemove', () => {
+  sliderValue.addEventListener('change', () => {
     if (sliderValue.value == 1) {
       title.innerHTML = '10k pageviews';
       price.innerHTML = `$${8}.00 ${monthHTML}`;
