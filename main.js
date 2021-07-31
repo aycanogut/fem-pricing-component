@@ -21,12 +21,12 @@ const createUI = () => {
               <output for="slider" class="component__topper__slider__output">$16.00 <span class="component__topper__slider__month">/ month</span></output>
             </label>
             <label class="component__topper__toggle">
-              <p class="component__topper__toggle__monthly">Monthly Billing</p>
+              <span class="component__topper__toggle__monthly">Monthly Billing</span>
                 <label class="component__topper__toggle__switch">
                   <input type="checkbox" class="component__topper__toggle__switch__input" unchecked>
                   <span class="component__topper__toggle__switch__slider"></span>
                 </label>
-              <p class="component__topper__toggle__yearly">Yearly Billing</p>
+              <span class="component__topper__toggle__yearly">Yearly Billing</span>
               <span class="component__topper__toggle__discount"></span> 
             </label>
           <form>
