@@ -12,7 +12,7 @@ const createUI = () => {
           Sign-up for our 30-day trial. No credit card required.
         </p>
       </header>
-      <main role="main" class="component__body">
+      <main class="component__body">
         <section class="component__topper">
           <h2 class="component__topper__pageviews">100k pageviews</h2>
           <form>
