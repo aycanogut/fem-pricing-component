@@ -6,6 +6,10 @@ body {
   font-family: $font-family;
 }
 
+h4 {
+  font-weight: map-get($font-weight, regular);
+}
+
 .component {
   // header
   &__header {
